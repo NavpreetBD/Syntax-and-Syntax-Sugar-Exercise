@@ -4,7 +4,23 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            var answer = 4;
+            var response = " ";
+            if (answer < 9)
+            {
+                response =  $"{answer} is less than nine";
+            }
+            else
+            {
+                response = $"{answer} is greater than or equal to nine";
+            }
+
+            //three parts of terinary
+            //1. condition 2. true scope 3. false scope
+
+           response = (answer < 9) ? $"{answer} is less than nine" : $"{answer} is greater than or equal to nine";
+
+            Console.WriteLine(response);
         }
     }
 }
